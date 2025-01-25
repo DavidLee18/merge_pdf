@@ -39,7 +39,7 @@ jobs:
         path: norminette_lsp-x86_64-unknown-linux-gnu
 
   release:
-    needs: [build]
+    needs: [update_version, build]
     runs-on: ubuntu-latest
     permissions:
       contents: write
